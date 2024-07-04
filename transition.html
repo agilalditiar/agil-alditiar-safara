@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contoh elemen elemen</title>
+    <style> 
+        .transisi1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s linear 1s;
+        }
+
+        .transisi1:hover {
+            width: 300px;
+        }
+
+        .transisi2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+
+        .transisi2:hover {
+            width: 300px;
+        }
+
+        .transisi3 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .transisi3:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<h1>iniiiii contohnya</h1>
+
+<p>silahkan klik objek yg warna merah</p>
+
+<div class="transisi1"></div>
+
+<div class="transisi2"></div>
+
+<div class="transisi3"></div>
+
+<p><b>NB :</b> klik 2x untuk mengubah animasi</p>
+
+</body>
+</html>
